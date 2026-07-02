@@ -106,7 +106,7 @@ shelly-pv-heat/
 │   └── control.js       (skrypt sterujący mJS)
 ├── docs/
 │   ├── deployment.html  (instrukcja wdrożeniowa)
-│   └── wiring-ds18b20.svg
+│   └── deployment_pl.html
 └── onepager.pptx        (jednostronicowy opis, PL/EN)
 ```
 
