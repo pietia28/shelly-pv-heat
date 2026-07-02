@@ -107,7 +107,6 @@ shelly-pv-heat/
 ├── docs/
 │   ├── deployment.html  (commissioning guide)
 │   └── deployment_pl.html
-└── onepager.pptx        (one-page overview, PL/EN)
 ```
 
 ---
