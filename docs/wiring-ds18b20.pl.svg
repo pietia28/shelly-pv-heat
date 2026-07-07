@@ -1,0 +1,109 @@
+<svg viewBox="0 0 940 468" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <style>
+    .title{font-size:21px;font-weight:750;fill:#17202e}
+    .sub{font-size:13px;fill:#5a6572}
+    .box{fill:#eef1f4;stroke:#17202e;stroke-width:1.6}
+    .sensor{fill:#ffffff;stroke:#17202e;stroke-width:1.4}
+    .dev{font-size:12.5px;fill:#17202e;font-weight:600}
+    .part{font-size:12px;fill:#17202e;font-weight:700}
+    .tslbl{font-size:11px;fill:#17202e;font-weight:600}
+    .pin{font-size:9px;font-weight:600}
+    .tlbl{font-size:10.5px;font-weight:700}
+    .res{font-size:11px;fill:#17202e;font-weight:600}
+    .rsub{font-size:9.5px;fill:#5a6572}
+    .note{font-size:12.5px;fill:#2a3646}
+    .notehead{font-size:12.5px;fill:#17202e;font-weight:700}
+    .bus-v{stroke:#cc3a22} .bus-d{stroke:#c98a1a} .bus-g{stroke:#2b2f36}
+    .fill-v{fill:#cc3a22} .fill-d{fill:#c98a1a} .fill-g{fill:#2b2f36}
+  </style>
+
+  <!-- Nagłówek -->
+  <text class="title" x="40" y="34">Poprawne podłączenie DS18B20 — Shelly Plus Add-on</text>
+  <text class="sub" x="40" y="55">Magistrala liniowa (łańcuch) + jeden rezystor podciągający. Zamiast gwiazdy.</text>
+
+  <!-- Add-on -->
+  <rect class="box" x="44" y="100" width="104" height="120" rx="8"/>
+  <text class="dev" x="96" y="150" text-anchor="middle">Shelly</text>
+  <text class="dev" x="96" y="168" text-anchor="middle">Plus Add-on</text>
+  <text class="tlbl fill-v" x="156" y="115">VCC</text>
+  <text class="tlbl fill-d" x="156" y="155">DATA</text>
+  <text class="tlbl fill-g" x="156" y="195">GND</text>
+
+  <!-- Magistrale (bus) -->
+  <line class="bus-v" x1="148" y1="120" x2="900" y2="120" stroke-width="2.6"/>
+  <line class="bus-d" x1="148" y1="160" x2="900" y2="160" stroke-width="2.6"/>
+  <line class="bus-g" x1="148" y1="200" x2="900" y2="200" stroke-width="2.6"/>
+
+  <!-- Rezystor pull-up DATA<->VCC przy Add-onie -->
+  <line class="bus-v" x1="205" y1="120" x2="205" y2="127" stroke-width="2"/>
+  <rect x="198" y="127" width="14" height="26" fill="#fff" stroke="#17202e" stroke-width="1.4"/>
+  <line class="bus-d" x1="205" y1="153" x2="205" y2="160" stroke-width="2"/>
+  <circle class="fill-v" cx="205" cy="120" r="3.2"/>
+  <circle class="fill-d" cx="205" cy="160" r="3.2"/>
+  <text class="res" x="220" y="137">3,3 kΩ</text>
+  <text class="rsub" x="220" y="150">pull-up</text>
+
+  <!-- ================= CZUJNIKI (łańcuch) ================= -->
+  <!-- Sensor 1: cx=300 -->
+  <line class="bus-v" x1="262" y1="120" x2="262" y2="250" stroke-width="2"/>
+  <line class="bus-d" x1="300" y1="160" x2="300" y2="250" stroke-width="2"/>
+  <line class="bus-g" x1="338" y1="200" x2="338" y2="250" stroke-width="2"/>
+  <circle class="fill-v" cx="262" cy="120" r="3.2"/>
+  <circle class="fill-d" cx="300" cy="160" r="3.2"/>
+  <circle class="fill-g" cx="338" cy="200" r="3.2"/>
+  <rect class="sensor" x="240" y="250" width="120" height="66" rx="6"/>
+  <text class="pin fill-v" x="262" y="264" text-anchor="middle">VDD</text>
+  <text class="pin fill-d" x="300" y="264" text-anchor="middle">DATA</text>
+  <text class="pin fill-g" x="338" y="264" text-anchor="middle">GND</text>
+  <text class="part" x="300" y="298" text-anchor="middle">DS18B20</text>
+  <text class="tslbl" x="300" y="338" text-anchor="middle">TS1 · BUFOR</text>
+
+  <!-- Sensor 2: cx=470 -->
+  <line class="bus-v" x1="432" y1="120" x2="432" y2="250" stroke-width="2"/>
+  <line class="bus-d" x1="470" y1="160" x2="470" y2="250" stroke-width="2"/>
+  <line class="bus-g" x1="508" y1="200" x2="508" y2="250" stroke-width="2"/>
+  <circle class="fill-v" cx="432" cy="120" r="3.2"/>
+  <circle class="fill-d" cx="470" cy="160" r="3.2"/>
+  <circle class="fill-g" cx="508" cy="200" r="3.2"/>
+  <rect class="sensor" x="410" y="250" width="120" height="66" rx="6"/>
+  <text class="pin fill-v" x="432" y="264" text-anchor="middle">VDD</text>
+  <text class="pin fill-d" x="470" y="264" text-anchor="middle">DATA</text>
+  <text class="pin fill-g" x="508" y="264" text-anchor="middle">GND</text>
+  <text class="part" x="470" y="298" text-anchor="middle">DS18B20</text>
+  <text class="tslbl" x="470" y="338" text-anchor="middle">TS2 · CWU 1</text>
+
+  <!-- Sensor 3: cx=640 -->
+  <line class="bus-v" x1="602" y1="120" x2="602" y2="250" stroke-width="2"/>
+  <line class="bus-d" x1="640" y1="160" x2="640" y2="250" stroke-width="2"/>
+  <line class="bus-g" x1="678" y1="200" x2="678" y2="250" stroke-width="2"/>
+  <circle class="fill-v" cx="602" cy="120" r="3.2"/>
+  <circle class="fill-d" cx="640" cy="160" r="3.2"/>
+  <circle class="fill-g" cx="678" cy="200" r="3.2"/>
+  <rect class="sensor" x="580" y="250" width="120" height="66" rx="6"/>
+  <text class="pin fill-v" x="602" y="264" text-anchor="middle">VDD</text>
+  <text class="pin fill-d" x="640" y="264" text-anchor="middle">DATA</text>
+  <text class="pin fill-g" x="678" y="264" text-anchor="middle">GND</text>
+  <text class="part" x="640" y="298" text-anchor="middle">DS18B20</text>
+  <text class="tslbl" x="640" y="338" text-anchor="middle">TS3 · CWU 2</text>
+
+  <!-- Sensor 4: cx=810 -->
+  <line class="bus-v" x1="772" y1="120" x2="772" y2="250" stroke-width="2"/>
+  <line class="bus-d" x1="810" y1="160" x2="810" y2="250" stroke-width="2"/>
+  <line class="bus-g" x1="848" y1="200" x2="848" y2="250" stroke-width="2"/>
+  <circle class="fill-v" cx="772" cy="120" r="3.2"/>
+  <circle class="fill-d" cx="810" cy="160" r="3.2"/>
+  <circle class="fill-g" cx="848" cy="200" r="3.2"/>
+  <rect class="sensor" x="750" y="250" width="120" height="66" rx="6"/>
+  <text class="pin fill-v" x="772" y="264" text-anchor="middle">VDD</text>
+  <text class="pin fill-d" x="810" y="264" text-anchor="middle">DATA</text>
+  <text class="pin fill-g" x="848" y="264" text-anchor="middle">GND</text>
+  <text class="part" x="810" y="298" text-anchor="middle">DS18B20</text>
+  <text class="tslbl" x="810" y="338" text-anchor="middle">TS4 · CWU 3</text>
+
+  <!-- Notatki -->
+  <rect x="44" y="366" width="852" height="82" rx="8" fill="#f5f7f9" stroke="#e3e7ec" stroke-width="1"/>
+  <text class="notehead" x="62" y="390">Zasady podłączenia:</text>
+  <text class="note" x="62" y="411">•  Wszystkie czujniki na jednej linii (łańcuch), a nie w gwiazdę z długimi odczepami.</text>
+  <text class="note" x="62" y="429">•  Jeden rezystor 3,3 kΩ (DATA ↔ VCC) na całą magistralę, blisko Add-ona. 4,7 kΩ też dopuszczalne.</text>
+  <text class="note" x="62" y="447">•  Kabel o odpowiednim przekroju, z dala od siły; VCC Add-ona ma limit 10 mA.</text>
+</svg>
