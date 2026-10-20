@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **This project has moved** to [pietia28/shelly-scripts → pv-heat](https://github.com/pietia28/shelly-scripts/tree/main/pv-heat), with its full history and tags (`pv-heat/v5.1.0`). This repository is archived and no longer updated.
+>
+> **Projekt został przeniesiony** do [pietia28/shelly-scripts → pv-heat](https://github.com/pietia28/shelly-scripts/tree/main/pv-heat), z pełną historią i tagami. To repozytorium jest zarchiwizowane i nie będzie aktualizowane.
+
 # Sterownik power-to-heat na Shelly
 
 > Zagospodarowuje nadwyżkę fotowoltaiki na grzanie bufora i zasobników CWU — w całości na sprzęcie Shelly. Bez chmury, bez Home Assistanta, bez mostka Modbus.
